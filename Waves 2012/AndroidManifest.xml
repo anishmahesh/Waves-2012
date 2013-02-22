@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.waves.rss"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-sdk android:minSdkVersion="8" />
+    
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="Waves 2012"
+       >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name=".WavesRssFeedsActivity"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name=".ContactInformation"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		 android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		 android:screenOrientation="portrait"
+             >
+        </activity>
+		<activity
+            android:name=".EventDescriptionActivity"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		 android:screenOrientation="portrait"
+             >
+        </activity>
+		<activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".CampusMap"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		 android:screenOrientation="portrait"
+             >
+        </activity>
+         <activity
+            android:name=".LocationEventsActivity"
+            android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar"
+    		 android:screenOrientation="portrait"
+             >
+        </activity>
+        <service android:name="UpdatesService"></service>
+         </application>
+
+</manifest>

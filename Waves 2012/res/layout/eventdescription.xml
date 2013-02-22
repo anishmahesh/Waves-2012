@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waves"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tveventheading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aa3824"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Rishabh"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tveventheading"
+        android:layout_above="@+id/lEventButtons"
+        android:background="@drawable/back"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tveventdescription"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lEventButtons"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:id="@+id/bCalenderElims"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_weight="0.33"
+        android:text="ElimsEvent"
+        
+        
+         />
+     <Button
+        android:id="@+id/bCalenderFinals"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_weight="0.33"
+        android:text="FinalsEvent"       
+       
+        />
+     <Button
+        android:id="@+id/bMaps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_weight="0.34"
+        android:text="Location"
+        
+        />
+    </LinearLayout>
+
+</RelativeLayout>

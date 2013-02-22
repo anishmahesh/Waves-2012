@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/waves" 
+    >
+
+    <TextView
+        android:id="@+id/tvEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="serif"
+        android:minHeight="40dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#aa3824"
+        />
+
+    <GridView
+        android:layout_below="@+id/tvEvents"
+        android:id="@+id/grid_viewEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</RelativeLayout>
